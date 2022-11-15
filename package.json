@@ -1,0 +1,25 @@
+{
+  "name": "gladox",
+  "version": "1.0.0",
+  "description": "Js bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Drareg04/GLaDOX.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Drareg04/GLaDOX/issues"
+  },
+  "homepage": "https://github.com/Drareg04/GLaDOX#readme",
+  "dependencies": {
+    "discord.js": "^14.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.27.0"
+  }
+}
