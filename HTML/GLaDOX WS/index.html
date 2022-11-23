@@ -1,15 +1,118 @@
 <!DOCTYPE html>
 <html>
-<head>
-<!-- Tab info -->
-<title>GLaDOX</title>
-<link rel="icon" href="images/gladosanimate.gif">
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel= "stylesheet" href="styles.css">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		<title>GLaDOX</title>
+		<link rel="shortcut icon" href="images/gladosanimate.gif">		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+		<script type = "text/javascript">
+			function displayNextImage() {
+				x = (x === images.length - 1) ? 0 : x + 1;
+				document.getElementById("img").src = images[x];
+				clearInterval(myTimer);
+				myTimer = setInterval(displayNextImage, 10000);
+			}
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+			function displayPreviousImage() {
+				x = (x <= 0) ? images.length - 1 : x - 1;
+				document.getElementById("img").src = images[x];
+				clearInterval(myTimer);
+				myTimer = setInterval(displayNextImage, 10000);
+			}
+	
+			function startTimer() {
+				myTimer = setInterval(displayNextImage, 10000);
+			}
 
-</body>
+			var images = [], x = -1;
+			images[0] = "images/banner1.png";
+			images[1] = "images/banner2.png";
+			images[2] = "images/banner3.png";
+			images[3] = "images/banner.png";
+		</script>
+	</head>
+	<body style="background-color:rgb(24, 24, 24);">
+		<section class="rigth">
+			<div class="banner" id="banner">
+				<body onload = "startTimer()">
+				<img id="img" src="images/banner.png"/>
+				<div class="arrow-left">
+					<a><img onclick="displayPreviousImage()" style="background: url(previous.png);" alt="previous" src="images/previous.png"></a>
+				</div>
+				<div class="arrow-right">
+					<img onclick="displayNextImage()" style="background: url(next.png)" alt="next" src="images/next.png">
+				</div>
+			</div>
+			<div class="bots" id="bots">
+				<ul>
+					<li><a href="#"><img src="images/glados.jpg" alt="discord logo"></a></li>
+					<li><a href="#"><img src="images/wc.png" alt="twitch logo" style="background-image: url(images/png.jpg)"></a></li>
+				</ul>
+			</div>
+			<div class="team" id="team">
+				<ul>
+					<li><a href="gerard.html"><img src="images/gerardchibi.png" alt="drareg avatar"></a></li>
+					<li><a href="yami.html"><img src="images/yamichibi.png" alt="Yami avatar"></a></li>
+				</ul>
+			</div>
+			<div class="contacts" id="contacts">
+				<div class="scene">
+					<div class="moon"><img src="images/moon.png"></div>
+				<script type="text/javascript">
+					function stars(){
+						let count = 500;
+						let scene = document.querySelector('.scene');
+						let i = 0;
+						while(i < count){
+							let star = document.createElement("i");
+							let x = Math.floor(Math.random() * window.innerWidth);
+							let y = Math.floor(Math.random() * window.innerHeight);
+							let duration = Math.random() * 10;
+							let size = Math.random() * 2;
+							star.style.left = x+'px';
+							star.style.top = y+'px';
+							star.style.width = 1+size+'px';
+							star.style.height = 1+size+'px';
+							star.style.animationDuration = 5+duration+'s';
+							star.style.animationDelay = duration+'s';
+							scene.appendChild(star)
+							i++
+						}
+					}
+					stars();
+				</script>
+					<img src="images/forest.png" class="forest">
+			<div>
+		</section>
+		<div class="header" id="header">
+			<a href="fuckoff.html" class="logo">GLaDOX playground</a>
+			<div class="header-right">
+				<a class="active" href="#banner">Home</a>
+				<a href="#servers">Servers</a>
+				<a href="#bots">Bots</a>
+				<a href="#team">Team</a>
+				<a href="#contacts">Contacts</a>
+			</div>
+			<script>
+				var prevScrollpos = window.pageYOffset;
+				window.onscroll = function() {
+				  var currentScrollPos = window.pageYOffset;
+				  if (prevScrollpos > currentScrollPos) {
+				    document.getElementById("header").style.top = "0";
+				  } else {
+				    document.getElementById("header").style.top = "-100px";
+				  }
+				  prevScrollpos = currentScrollPos;
+				}
+			</script>
+		</div>
+	</section>
+	</body>
 </html>
