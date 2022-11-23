@@ -1,0 +1,247 @@
+*{
+	margin: 0;
+	padding-top: 20px 10px;
+	box-sizing: border-box;
+}
+/* sets the website's colos scheme to dark mode, for the scrollbar, input fields and other*/
+:root {
+  color-scheme: dark;
+}
+.body{
+	width: 100%;
+	height: 100%;
+	background-color: rgb(24, 24, 24);
+	color:rgb(255, 255, 255);
+}
+.rigth{
+	width: 100%;
+	heigth: 100%;
+	margin: 0;
+}
+.row{
+	display: flex;
+	justify-content: space-between;
+}
+/* Style the header with a grey background and some padding */
+#header {
+	overflow: hidden;
+	background-color: black;
+	padding: 20px 10px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition: top 1.3s;
+}
+/* Style the header links */
+.header a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 25px;
+	border-radius: 15px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+	font-size: 25px;
+	font-weight: bold;
+	font-family: 'Pacifico', cursive;
+	color: white;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+	background-color: #ddd;
+	color: rgb(100, 100, 100);
+}
+
+/* Style the active/current link*/
+.header a.active {
+	background-color: rgb(30, 30, 30);
+	color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+	float: right;
+	margin-right: 20px;
+}
+.banner{
+	width: 100%;
+	margin-left: 0;	
+}
+.banner img{
+	width: 100%;
+	heigth: auto;
+	margin-left: 0;
+}
+.arrow-left a img{
+	width: 70px;
+	position: relative;
+	margin-top: -250px;
+	float: left;
+}
+.arrow-left a:hover img{
+	transform: scale(1.5);
+}
+.arrow-right img{
+	width: 70px;
+	position: relative;
+	margin-top: -250px;
+	float: right;
+}
+.servers{
+	width: 100%;
+	display: flex;
+	background-color: rgb(24, 24, 24);
+	background-image: url("images/OwOs.png");
+	margin-left: 0;
+}
+.servers ul {
+	display: block;
+	list-style: none;
+	padding: 0;
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 10%;
+}
+.servers ul li {
+	margin: 30px;
+	display: inline-block;
+}
+.servers ul li a {
+	display: inline-block; 
+}
+.servers ul li a img {
+	width: 300px;
+	display: block;
+}
+.servers ul li a:hover img {
+	transform: scale(1.5);
+}
+.bots{
+	width: 100%;
+	display: flex;
+	background-color: rgb(24, 24, 24);
+	background-image: url("images/OwOghosts.png");
+	margin-left: 0;
+}
+.bots ul {
+	display: block;
+	list-style: none;
+	padding: 0;
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 10%;
+}
+.bots ul li {
+	margin: 30px;
+	display: inline-block;
+}
+.bots ul li a {
+	display: inline-block; 
+}
+.bots ul li a img {
+	width: 300px;
+	height: 300px;
+	display: block;
+	border-radius: 50%;
+}
+.bots ul li a:hover img {
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
+	transform: scale(1.5);
+}
+.team{
+	width: 100%;
+	display: flex;
+	background-color: rgb(24, 24, 24);
+	background-image: url("images/OwOs2.jpg");
+	margin-left: 0;
+}
+.team ul {
+	display: block;
+	list-style: none;
+	padding: 0;
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 10%;
+}
+.team ul li {
+	margin: 30px;
+	display: inline-block;
+}
+.team ul li a {
+	display: inline-block; 
+}
+.team ul li a img {
+	width: 300px;
+	display: block;
+}
+.contacts{
+	high: 30px;
+	background-color: rgb(30, 30, 30)
+}
+.scene{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(#111425,#3751e0);
+	background-attachment: fixed;
+	overflow: hidden;
+}
+.moon img{
+	position: relative;
+	top: 120px;
+	left: 400px;
+	width: 200px;
+	height: 200px;
+}
+.forest{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	transform: scale(1.2);
+}
+.scene i{
+	position: absolute;
+	background: #fff;
+	border-radius: 50%;
+	animation: animate linear infinite;
+}
+@keyframes animate{
+	0%{
+		opacity: 0;
+		transform: translateY(0);
+	}
+	10%,90%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+}
+.allfuckers{
+	width: 1500px;
+	margin-left: -1%;
+	height: 740px;
+	background-color: rgb(24, 24, 24);
+}
+.fuckoff{
+	text-align: center;
+	line-height: 750px;
+	height: 750;
+	margin-top: 30px;
+}
+.fuckoff h1{
+	font-size: 150px;
+	font-weight: bold;
+	font-family: 'Pacifico', cursive;
+	color: white;
+}
