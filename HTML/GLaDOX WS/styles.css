@@ -126,8 +126,7 @@
 .bots{
 	width: 100%;
 	display: flex;
-	background-color: rgb(24, 24, 24);
-	background-image: url("images/OwOghosts.png");
+	background-color: rgb(0, 0, 0);
 	margin-left: 0;
 }
 .bots ul {
@@ -147,7 +146,7 @@
 }
 .bots ul li a img {
 	width: 300px;
-	height: 300px;
+	height: auto;
 	display: block;
 	border-radius: 50%;
 }
