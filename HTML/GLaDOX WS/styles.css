@@ -76,7 +76,7 @@
 }
 .banner img{
 	width: 100%;
-	heigth: auto;
+	height: auto;
 	margin-left: 0;
 }
 .arrow-left a img{
@@ -182,7 +182,7 @@
 	display: block;
 }
 .contacts{
-	high: 30px;
+	height: 30px;
 	background-color: rgb(30, 30, 30)
 }
 .scene{
@@ -199,6 +199,33 @@
 	left: 400px;
 	width: 200px;
 	height: 200px;
+}
+.title{
+	position: relative;
+	text-align: center;
+	top: 150px;
+}
+.title h1{ 
+	font-size: 100px;
+	display: inline-block;
+}
+.title h1 span{ 
+	color: #bf41df;
+}
+/* .title h1:hover {
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
+	transform: scale(1.5);
+} */
+.title img{
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+}
+.title img:hover {
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
+	transform: scale(1.5);
 }
 .forest{
 	position: absolute;
