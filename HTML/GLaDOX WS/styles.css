@@ -15,7 +15,7 @@
 }
 .rigth{
 	width: 100%;
-	heigth: 100%;
+	height: 100%;
 	margin: 0;
 }
 .row{
@@ -32,6 +32,7 @@
 	top: 0;
 	left: 0;
 	transition: top 1.3s;
+	z-index: 1000;
 }
 /* Style the header links */
 .header a {
@@ -182,7 +183,7 @@
 	display: block;
 }
 .contacts{
-	height: 30px;
+	high: 30px;
 	background-color: rgb(30, 30, 30)
 }
 .scene{
@@ -196,36 +197,18 @@
 .moon img{
 	position: relative;
 	top: 120px;
-	left: 400px;
+	left: 15%;
 	width: 200px;
 	height: 200px;
 }
 .title{
-	position: relative;
+	position:relative;
 	text-align: center;
-	top: 150px;
+	font-size: 40px;
+	z-index: 998;
 }
-.title h1{ 
-	font-size: 100px;
-	display: inline-block;
-}
-.title h1 span{ 
-	color: #bf41df;
-}
-/* .title h1:hover {
-	-webkit-filter: invert(100%);
-	filter: invert(100%);
-	transform: scale(1.5);
-} */
-.title img{
-	width: 80px;
-	height: 80px;
-	display: inline-block;
-}
-.title img:hover {
-	-webkit-filter: invert(100%);
-	filter: invert(100%);
-	transform: scale(1.5);
+.title span{
+	color: #bf5ae1;
 }
 .forest{
 	position: absolute;
@@ -233,6 +216,7 @@
 	left: 0;
 	width: 100%;
 	transform: scale(1.2);
+	z-index: 999;
 }
 .scene i{
 	position: absolute;
@@ -252,22 +236,4 @@
 		opacity: 0;
 		transform: translateY(-100px);
 	}
-}
-.allfuckers{
-	width: 1500px;
-	margin-left: -1%;
-	height: 740px;
-	background-color: rgb(24, 24, 24);
-}
-.fuckoff{
-	text-align: center;
-	line-height: 750px;
-	height: 750;
-	margin-top: 30px;
-}
-.fuckoff h1{
-	font-size: 150px;
-	font-weight: bold;
-	font-family: 'Pacifico', cursive;
-	color: white;
 }
