@@ -165,26 +165,6 @@ async def text_format_options(text_tricks):
 
 ########################################################################
 
-####################CHANGE THE SPAM TIME OF DRAREG04####################
-@client.command()
-async def spam(mcetm):
-    page_wlh = discord.Embed(title="SPAM",description="Write the time",colour=discord.Colour.purple())
-    text = await mcetm.send(embed=page_wlh)
-    def check(msg):
-        return msg.author == mcetm.author and msg.channel == mcetm.channel
-
-    msg = await client.wait_for("message", check=check)
-    if msg.author.id == 511535555381559311 and int(msg.content) >= 0:
-        f = open("time.txt", "w")
-        f.write(str(msg.content))
-        f.close
-        puta = ("The time has change to "+ str(msg.content) + " seconds")
-        pag = discord.Embed(title="OK", description=puta, colour=discord.Colour.purple())
-        toxt = await mcetm.send(embed=pag)
-    else:
-        await mcetm.send("https://cdn.memegenerator.es/imagenes/memes/full/2/71/2710193.jpg")
-########################################################################
-
 ############################CHANGE THE TXTS#############################
 @client.command()
 async def gameadd(mcetm):
